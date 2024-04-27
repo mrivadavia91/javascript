@@ -1,18 +1,24 @@
+function pagar(){
+alert("el total es 600")
+let precio = 600
+let consulta = prompt("en cuantas cuotas abona? 1,3 o 6")
 
+if(consulta){
 
-let precio = 2000
-let precioConDescuento = 10
-let tranferencia = precio/precioConDescuento
-let credito = precio
+    switch(consulta){
+        case "1":
+            alert("esta bien son 600")
+            break
+        case "3":
+            alert("cada cuota queda en 200") 
+            break
+        case "6":
+            alert("cada cuota queda en 100")   
 
-if(precio){prompt("transferencia o credito")
-    alert("ingrese forma de pago");
+    }
+    alert("muchas gracias")
 }
-else if(tranferencia){
-    
-    alert("tranferencia");
-}
-else if(credito){
-    alert(precio);
+
 }
 
+pagar()
